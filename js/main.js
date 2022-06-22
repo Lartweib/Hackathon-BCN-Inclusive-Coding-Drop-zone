@@ -1,29 +1,29 @@
 //Fondo animado
-$('.container').Geometryangle({
-    mesh: {
-        width: 1.6,
-        height: 1.6,
-        depth: 15,
-        zoom:2,
-        xRange: 0.8,
-        yRange: 0.1,
-        zRange: 1.5,
-        ambient: 'rgba(0, 255, 50, 1)',
-        diffuse: 'rgba(0, 255, 130, 1)',
-        background: 'rgb(0, 0, 0)',
-        speed: 0.0004,
-    },
-    line: {
-        fill: "rgba(0, 0, 0, 0)",
-    }
+$(document).ready(function(){
+    $('.container').Geometryangle({
+        mesh: {
+            width: 1.6,
+            height: 1.6,
+            depth: 15,
+            zoom:2,
+            xRange: 0.8,
+            yRange: 0.1,
+            zRange: 1.5,
+            ambient: 'rgba(0, 255, 50, 1)',
+            diffuse: 'rgba(0, 255, 130, 1)',
+            background: 'rgb(0, 0, 0)',
+            speed: 0.0004,
+        },
+        line: {
+            fill: "rgba(0, 0, 0, 0)",
+        }
+    });
 });
 $('body').css('background', 'black')
 //variables
 const dropzone = document.querySelector('.dropzone');
 const dropzoneText = dropzone.querySelector('h3');
 const inputFile = dropzone.querySelector('#input-files');
-const errorMsj = document.querySelector("#errorMsj");
-const buttonUpload = document.querySelector('.btn-upload');
 let archivos;
 let archivosCargados = false;
 //Funciones
@@ -81,7 +81,7 @@ function mensajeError(estado) {
     }
 }
 //Capturador de eventos del dropzone
-inputFile.addEventListener("change", (e) => {
+inputFile.addEventListener("change", () => {
     archivos = this.files
     dropzone.classList.add("destacado");
     mostrarArchivos(archivos);
