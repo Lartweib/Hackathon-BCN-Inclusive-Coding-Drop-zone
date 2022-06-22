@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDrop | DropZone </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500;1,800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-dz">
+            <div class="dropzone">
+                <h3 id="textoDrop">Arrastra tus archivos aqui!</h3>
+                <div id="listaArchivos"></div>
+                <div id="enviadoMsj">
+                    <h3>Perfecto</h3>
+                    <p>Sus archivos fueron subidos correctamente</p>
+                    <button onclick="mensajeError(false)">Cerrar</button>
+                </div> 
+                <div id="errorMsj">
+                    <h3>Ups, algo ha ido mal</h3>
+                    <p>No hemos podido subir tu archivo, revisa el formato o bien inténtalo de nuevo</p>
+                    <button onclick="mensajeError(false)">Cerrar</button>
+                </div>
+                <input type="file" id="input-files" multiple hidden />
+            </div>
+            <button class="btn-upload" onclick="subirArchivos()">Subir archivos</button>
+        </div>
+        <div class="bienvenido">
+            <h2>Bienvenido a DDrop</h2>
+            <p>Para subir tus archivos de forma simple a drive, puedes hacer Login a través de Google</p>
+            <button class="btn-login-google"> Login con Google</button>
+        </div>
+    </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://salesportal.aptaracorp.com/PPDI/POC/js/geometry/geometryangle.js'></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
