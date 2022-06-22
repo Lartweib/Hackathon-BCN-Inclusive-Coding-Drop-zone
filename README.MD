@@ -42,7 +42,7 @@ Cualquier persona puede contribuir o apoyar el proyecto de la manera que quiera.
 ## Licencia
 
 Para leer la licencia, hacer click en el siguiente link:
-[MIT License]()
+[MIT License](https://github.com/Lartweib/Hackathon-BCN-Inclusive-Coding-Drop-zone/blob/master/LICENCE)
 
 ## Información de contacto
 
